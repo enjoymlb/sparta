@@ -12,3 +12,5 @@ target_movies=list(db.movies.find({'star':target_star}))
 for target_movie in target_movies:
 
     db.movies.update_one(target_movie, {'$set': {'star': '0'}})
+
+    print('hello')
